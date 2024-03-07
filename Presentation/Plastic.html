@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>PlasticPollution</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="Plastic.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+
+          <!--Make neat and phones accessible-->
+
+          <style>
+            canvas{max-width: 100%; margin: 0 auto 40px; display: block;}
+           
+    
+            @media (max-width: 767px){
+              .content, .contentT, .contentO {
+                width: calc(100% - 130px);
+              }
+              .navigation{
+                width: 50px;
+              }
+              .navigation ul{padding-left: 0;}
+    
+              .chart{
+                margin: 0 10%;
+                width: 90%;
+              }
+    
+              .grid-container{display: block !important;}
+  
+            }
+    
+            @media (max-width: 640px){
+              .navigation ul {
+                  padding-left: 80px;
+              }
+    
+              h1{
+                font-size: 20px;
+              }
+    
+              .content, .contentT, .contentO {
+                    width: calc(100% - 40px);
+                }
+    
+                .chart {
+                    margin: 0 2.5%;
+                    width: 95%;
+                }
+    
+                canvas{
+                  height: auto !important;
+                }
+    
+    
+                h1 {
+                  font-size: 17px;
+                  text-align: left;
+                  padding-left: 9px;
+              }
+            }
+
+            .contentT{
+              text-align: center;
+            }
+
+            select{
+              max-width: 100%;
+            }
+          </style>
+    
+
+</head>
+
+
+    <!-- ///////////////////  HEAD //////////////////////////////////// -->
+    
+    
+    
+    <!-- ///////////////////  START BODY //////////////////////////////////// -->
+
+<body>
+        
+  <div class="content">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1><span style="color:rgb(70, 70, 70)">Plastic</span><span style="color:rgb(121, 120, 120)">Pollution</span></h1>
+   
+
+    <h2><span style="color:rgb(120, 120, 120)">Revolutionising Recycling Rates:</span><span style="color:rgb(70, 70, 70)"> Harnessing AI for Quality Control</span> </h2>
+  
+    <br>
+    <br>
+    <br>
+    <br>
+
+  </div>
+
+        <div class="contentF">
+         
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        </div>
+
+        <div class="contentT">
+
+          <br>
+        
+          <h3>Background</h3>
+               
+           <h4>My Client Could be:</h4>
+                
+            <p>1. A National Government Agency responsible for improving recycling rates.</p> 
+                    
+            <p>2. A Local Recycling Centre looking to attract more customers.</p> 
+        
+            <br> <br> <br> <br> <br> <br>
+        
+        
+           <h3>Plastic Pollution</h3>
+        
+           <p>This graph visualises OECD's projection of global plastic waste and its fate.</p>
+         
+           <div class="chart" id="chart1"></div>
+        
+           <p><a class="textLink" id= "link" href="https://colab.research.google.com/drive/1LSGqdCpN6iwabe6GSOltS0I6CL_WsRfv">Colab</a></p> 
+        
+           <br> <br> <br> <br> <br> <br>
+        
+           <!-- <h3>Why is this a problem?</h3> -->
+        
+           <h4>Unrelenting consumption is resulting in significant environmental, economic, and social costs</h4>
+        
+           
+            <div class="img-container">
+              <img src="develop.jpeg" alt="Image 1">
+              <img src="Turtle.jpeg" alt="Image 2">
+              <img src="gases.jpeg" alt="Image 3">
+              <img src="boat.jpeg" alt="Image 4">
+              <img src="debris.jpeg" alt="Image 5">
+              <img src="person.jpeg" alt="Image 6">
+            </div>
+        
+            <br> <br> <br> <br> <br> <br>
+            <br> <br> <br> <br> <br> <br>
+          
+        
+           <h3>Taking Action with Artificial Intelligence</h3>
+        
+           <p>Efforts to increase recycling rates, including initiatives aimed at altering consumer behavior, have largely proven ineffective.
+           <br>To make a substantial impact, we must address the issue at its core infrastructure level.</p>
+        
+           <h4>How Artificial Intelligence Can Help:</h4>
+        
+           <div class="recycling-image-container">
+            <div class="image-text-container">
+                <h4>Sorting and Separation</h4>
+                <img src="robot.jpeg" alt="Sorting and Separation Image" class="recycling-image">
+            </div>
+            
+            <div class="image-text-container">
+                <h4>Predictive Analytics</h4>
+                <img src="pred.jpeg" alt="Predictive Analytics Image" class="recycling-image">
+            </div>
+            
+            <div class="image-text-container">
+                <h4>Quality Control</h4>
+                <img src="quality.jpeg" alt="Quality Control Image" class="recycling-image">
+            </div>
+        </div>
+
+            <br> <br> <br> <br> <br> <br>
+        
+            <h3>One of the biggest challenges is assessing the true quality of recyclable materials</h3>
+        
+            <h4>Why is Quality Control such a big deal?</h4>
+        
+            <p><strong> &#x1F34B; Market for "Lemons" Concept: &#x1F34B;</strong></p>
+            <p>- George Akerlof's Nobel Prize winning economic theory regarding asymmetric information in markets.</p>
+            <p>- Refers to the challenge of distinguishing between high-quality and low-quality products.</p>
+            
+            <p><strong> &#x267B; Recycling Industry's Dilemma: &#x267B;</strong></p>
+            <p>- Absence of accurate quality assessment in the recycling market.</p>
+            <p>- Difficulty in differentiating between good and bad suppliers.</p>
+            
+            <p><strong> &#x1F4B0; Impact on Buyers: &#x1F4B0;</strong></p>
+            <p>- Buyers cannot discern between quality levels.</p>
+            <p>- Reluctance to pay fair prices due to uncertainty.</p>
+            
+            <p><strong> &#x26A0;&#xFE0F; Consequences for the Industry: &#x26A0;&#xFE0F;</strong></p>
+            <p>- Reduction in supply of high-quality recycled materials.</p>
+            <p>- Imbalance in the market, leading to collapse in recyclables being traded.</p>
+        
+            <br> <br> <br> <br> <br> <br>
+        
+            <h3>The Solution: Quality Control with AI</h3>
+        
+            <h4>Incorporating computer vision and machine learning technologies into recycling facilities revolutionises quality control processes.</h4>
+        
+            <div class="solution">
+              <img src="QCCV.jpeg" alt="Computer Vision Image" class="solution-image">
+              
+                <div class="text-solution">
+                  <p><strong> Quality Control: AI systems can monitor the quality of recycled materials by analyzing data from sensors and cameras throughout the recycling process.</strong></p>
+                  <br>
+                  <p><strong> Sellers can leverage AI-generated data to prove the quality of their recycled materials, enabling them to command better prices in the market.</strong></p>
+                  <br>
+                  <p><strong> Buyers, in turn, gain confidence in the reliability and consistency of recycled waste, leading to increased demand and increased trade in recyclables.</strong></p>
+              </div>
+           </div>
+
+            <br> <br> <br> <br> <br> <br>
+            
+        </div>
+
+           <h3>Conclusion</h3>
+
+           <p>Conc. Here</p>
+      
+           <br><br><br><br><br><br><br><br>
+
+      </div>
+
+     
+      
+
+      </body>
+
+          <script>
+            //Define charts:
+            var myChart1 = "slider.json";
+            var myChart2 = "plasticmap.json";
+        
+            // Embed charts:
+            vegaEmbed('#chart1', myChart1);
+            vegaEmbed('#chart2', myChart2);
+         
+         </script>
+        
+
+
+
+        <div class="container">
+            <div class="fallingSnow">
+                <span class="img-1"></span>
+                <span class="img-2"></span>
+                <span class="img-3"></span>
+                <span class="img-4"></span>
+                <span class="img-5"></span>
+                <span class="img-6"></span>
+                <span class="img-1"></span>
+                <span class="img-2"></span>
+                <span class="img-3"></span>
+                <span class="img-4"></span>
+                <span class="img-5"></span>
+                <span class="img-6"></span>
+                <span class="img-1"></span>
+                <span class="img-2"></span>
+                <span class="img-3"></span>
+                <span class="img-4"></span>
+                <span class="img-5"></span>
+                <span class="img-6"></span>
+                <span class="img-1"></span>
+                <span class="img-2"></span>
+                <span class="img-3"></span>
+                <span class="img-4"></span>
+                <span class="img-5"></span>
+                <span class="img-6"></span>
+                <span class="img-1"></span>
+                <span class="img-2"></span>
+                <span class="img-3"></span>
+                <span class="img-4"></span>
+                <span class="img-5"></span>
+                <span class="img-6"></span>
+                <span class="img-1"></span>
+                <span class="img-2"></span>
+                <span class="img-3"></span>
+                <span class="img-4"></span>
+                <span class="img-5"></span>
+                <span class="img-6"></span>
+                <span class="img-1"></span>
+                <span class="img-2"></span>
+                <span class="img-3"></span>
+                <span class="img-4"></span>
+                <span class="img-5"></span>
+                <span class="img-6"></span>
+                </div>
+            </div>
+   
+ 
+</html>
